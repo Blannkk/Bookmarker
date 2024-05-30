@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Bookmarker</title>
+</head>
+
+<body>
+    <section class="py5">
+        <div class="container">
+            <h1 class="mb-4 text-center">Bookmarker</h1>
+            <div class="form py-5 border-top border-bottom">
+                <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+                <div class="mb-4">
+                    <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i> Site
+                        Name</label>
+                    <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+                    <div id="siteName" class="invalid-feedback">
+                        please enter a valid site name
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="siteUrl" class="form-label"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                    <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+                    <div id="siteUrl" class="invalid-feedback">
+                        please enter a valid URL starts with http or https
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn px-5" disabled value="submit" id="addSite">Submit</button>
+                </div>
+                <div class="wrapper py-5">
+                    <table class="text-center table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Index</th>
+                                <th scope="col">Website Name</th>
+                                <th scope="col">Visit</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sitePlace">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+    <script src=" ./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

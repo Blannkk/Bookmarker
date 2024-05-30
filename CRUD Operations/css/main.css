@@ -1,0 +1,77 @@
+:root {
+    --main-color: #F7ECDE;
+    --head-color: #352e28;
+    --effect-color: #fec260;
+}
+
+
+body {
+
+    background-color: var(--main-color);
+
+    line-height: 1.4;
+}
+
+
+/*=============== Contact End ====================*/
+h1 {
+    font-size: 3.5rem;
+    font-family: "Pacifico", cursive;
+    color: var(--head-color);
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 23%;
+    height: 25%;
+    left: 496px;
+    bottom: 10px;
+    background-color: var(--effect-color);
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::before {
+    height: 50%;
+}
+
+.form h2 {
+    font-family: "Righteous", cursive;
+    font-size: 1.7rem;
+    background-image: linear-gradient(to right, #349e95, #a449b5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+
+}
+
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    background-color: var(--head-color);
+    color: var(--effect-color);
+    border: none;
+}
+
+.px-5:not(:disabled) {
+    background-color: var(--head-color);
+    color: #fff;
+}
+
+.btn-visit {
+    background-color: #2ab931;
+
+    &:hover {
+        background-color: #1f6b23;
+    }
+}
